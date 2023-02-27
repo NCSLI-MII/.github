@@ -1,4 +1,3 @@
-## Hi there 👋
 
 <!--
 
@@ -19,7 +18,17 @@ and security for locating, communicating and sharing measurement information.
 This site hosts projects in the open domain to faciliate development of MII structures, taxonomies and libraries to populate MII industry documents and 
 quality infrastructure records.
 
-Committee 141 Mandate
+## Committee 141 Mandate
 1. Develop and define data structures, taxonomies and libraries to populate MII industry documents: accreditation scopes, instrument specifications, and certificates.
 2. Write the MII-defining document: e. g., RP, standard, etc.
 3. Document ways for companies to support and use the MII.
+
+## Projects
+* MII Taxonomy
+* M-Layer 
+
+## Contributing
+
+## Information and contact
+[MII Knowledge base](http://miiknowledge.wikidot.com/)
+[NCSL International](https://ncsli.org/)
