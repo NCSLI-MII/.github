@@ -30,5 +30,5 @@ quality infrastructure records.
 ## Contributing
 
 ## Information and contact
-[MII Knowledge base](http://miiknowledge.wikidot.com/)
-[NCSL International](https://ncsli.org/)
+* [MII knowledge base](http://miiknowledge.wikidot.com/)
+* [NCSL International](https://ncsli.org/)
