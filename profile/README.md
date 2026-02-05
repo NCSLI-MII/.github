@@ -22,12 +22,14 @@ quality infrastructure records.
 1. Develop and define data structures, taxonomies and libraries to populate MII industry documents: accreditation scopes, instrument specifications, and certificates.
 2. Write the MII-defining document: e. g., RP, standard, etc.
 3. Document ways for companies to support and use the MII.
+4. [Governance](governance/141governance.md)
 
 ## Projects
 * MII Taxonomy
 * M-Layer 
 
 ## Contributing
+Please see the developer's guide.
 
 ## Information and contact
 * [MII knowledge base](http://miiknowledge.wikidot.com/)
