@@ -29,7 +29,7 @@ quality infrastructure records.
 * M-Layer 
 
 ## Contributing
-Please see the developer's guide.
+Please see the [development guide](governance/DevelopmentGuide.md).
 
 ## Information and contact
 * [MII knowledge base](http://miiknowledge.wikidot.com/)
