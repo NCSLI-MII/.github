@@ -32,5 +32,7 @@ quality infrastructure records.
 Please see the [development guide](governance/DevelopmentGuide.md).
 
 ## Information and contact
+* [Governance](governance/141governance.md)
+* [Development](governance/DevelopmentGuide.md)
 * [MII knowledge base](http://miiknowledge.wikidot.com/)
 * [NCSL International](https://ncsli.org/)
