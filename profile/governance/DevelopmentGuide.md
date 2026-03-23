@@ -109,6 +109,7 @@ As an example, a patch change would add new references or optional parameters to
 ##### Pre-release Updates 
 
 MII\&AC members will work to merge all working branches into a pre-release branch for the next released version of the product.
+The pre-release cycle, before the first production 1.0.0 version is released, is following a Minor change versioning with the beta tag, e.g. 0.2.0-beta, 0.3.0-beta, etc...
 
 #### Branching 
 
@@ -116,26 +117,33 @@ GitHub allows users to branch items, make changes, and merge those changes back 
 
 ##### NCSLI Branches & Branch Management
 
-master branch–the currently fully approved branch under major version control releases
+**main** branch – the currently fully approved branch under major version control releases
 
-working branch–branches the MII\&AC or working group currently edits.
-These branches may contain major, minor and patching changes.
+**development** branch – branches the MII\&AC or working group currently edits. Working branches are recommended to be created from a reported issue. This ensures provenance can be traced to a resolved issue and subsequent pull request.
+These branches may contain major, minor and patching changes. 
 
-pre-release branch–branch currently staged for a MII\&AC approval vote for merging into the next master branch
+**pre-release** branch – branch currently staged for a MII\&AC approval vote for merging into the next main branch.
+
+Note that pre-release and development branches are synonymous during the pre-release beta cycle.  
 
 The MII\&AC will approve users with roles to manage the NCSLI branches.
 The MII\&AC will assign the role of Coordinator, Committer, and Reviewer to members of the working group.
 The Coordinator will group change requests into specific version releases.
 The Reviewer will review and approve changes.
-Once approved, the Committer will merge changes into the current Pre-Release Branch and master branch.
+Once approved, the Committer will merge changes into the current Pre-Release Branch and main branch.
 
 ##### Stakeholder Branch Management
 
-Any stakeholder may create a branch and manage a new version, with the eventual goal of merging those changes back into the official master branch through MII\&AC review and approval.
+Any stakeholder may create a branch and manage a new version, with the eventual goal of merging those changes back into the official main branch through MII\&AC review and approval. Before creating a development branch, open an issue that describes the proposed changes. From the reported issue, create a branch for the issue then checkout the branch for development purposes. Once the changes are implemented, open a pull request.
 
 #### Merges
 
-Members creating working branches may assign roles to users, defining who may approve branch changes and merges back into that branch.
+Members creating development branches may assign roles to users, defining who may approve branch changes and commits back into that branch. The merge process(es) across MII repositories intends to be automated through customized github actions. The only mechanism to merge changes is through a Pull Request to **main** that triggers a multistep process. Committers may open Pull Requests, approve PRs and merge changes into **main**. In order to keep a linear commit history, **development** branch commits are squashed before merge, such that each change can be traced to a PR and issue.
+- Schema changes validated against XML, JSON or other schema definitions.
+- Any source changes are validated against the **development** branch schema.
+- Successful validation requires at least one approving review.
+- Upon approval, any further changes are automated and committed to the branch.
+- The committer is now able to squash and merge changes into **main**.
 
 #### Releases 
 
@@ -145,19 +153,19 @@ The Reviewer will provide a final sign-off on the scope of changes in a new bran
 
 After submission of a working branch, the MII\&AC will evaluate the working branch contents and summary and determine the level of changes that exist within the working branch and assign a change classification (Major, Minor, Patch).
 
-The RG may merge working branches that meet the criteria of minor changes or patching changes into the master branch on approval from the MII\&AC.
+The RG may merge working branches that meet the criteria of minor changes or patching changes into the main branch on approval from the MII\&AC.
 The RG shall merge the approved working branch into the pre-release branch in parallel.
 
 The RG shall merge working branches that meet the criteria of Major Change  into the Pre-Release Branch after a vote and approval of the MII\&AC.
 
-The RG may then vote on the Pre-Release Branch and, if approved, merge it back into the master branch for a major version release.
+The RG may then vote on the Pre-Release Branch and, if approved, merge it back into the main branch for a major version release.
 
 NCSLI Major Releases  
-It will require a MII\&AC vote to roll all changes in the pre-release branch into the master branch.
+It will require a MII\&AC vote to roll all changes in the pre-release branch into the main branch.
 
 NCSLI Minor Changes or Patching Changes
 Participants may approve minor changes and patches during weekly MII\&AC meetings.
-The RG may merge those changes with negligible effects which do not require a major release approval into the master or pre-release branches.
+The RG may merge those changes with negligible effects which do not require a major release approval into the main or pre-release branches.
 
 **Specifications:**  
 Taxonomy Definition Rules
